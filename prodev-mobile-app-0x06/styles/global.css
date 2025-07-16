@@ -1,0 +1,82 @@
+/* ===== CSS Reset ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* 1rem = 10px for easier rem calculations */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem; /* 16px */
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Layout Helpers ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 2.4rem; }
+h4 { font-size: 2rem; }
+h5 { font-size: 1.8rem; }
+h6 { font-size: 1.6rem; }
+
+/* ===== Links ===== */
+a {
+  color: #5f4b8b; /* Mystic Planner purple */
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Buttons ===== */
+button {
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  background-color: #5f4b8b;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #4a3a6d;
+}
+
+/* ===== Images ===== */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== Forms ===== */
+input, textarea, select {
+  font: inherit;
+  padding: 1rem;
+  border: 1px solid #ccc
+}
